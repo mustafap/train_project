@@ -13,9 +13,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    qcustomplot.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    qcustomplot.h
 
 FORMS    += mainwindow.ui
 
@@ -25,7 +27,7 @@ unix|win32: LIBS += -lboost_system
 unix|win32: LIBS += -lboost_thread
 
 
-unix|win32: LIBS += -lqcustomplot
+
 
 win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../rs_train/release/ -lrs_train
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../rs_train/debug/ -lrs_train
