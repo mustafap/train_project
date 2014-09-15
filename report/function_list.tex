@@ -32,62 +32,315 @@
 
 \subsection{Diferansiyel Denklem Çözücü}
 
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
 
 \newpage
+
 \section{Lokomotif Motor}
 
 \subsection{Motor Kuvvet Hesabı}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
 
 \subsection{Dinamik Fren Hesabı}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
 
 \subsection{Güç Hesabı}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
 
 \subsection{Verim}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
 
 \newpage
 \section{Kayıp Kuvvetler}
+Bu bölümde tren üzerinde oluşan kayıp kuvvetler incelenmektedir. Ayrıca trenin kayma ve patinaj durumları anlatılmıştır.
 
+\subsection{Seyir Direnci}
+\begin{description}
+
+\item[Tanım ve Amaç:] Seyir direnci bir aracın üzene etkiyen rüzgar, tekerlek sürtünmeleri vb kayıp kuvvetleri hesaplarç Seyir direnci araç çeşidine göre değişmektedir. Bu değişim araçların yapılarından ve konumlarından kaynaklanmaktadır. 
+
+\item[Tagler:] sürtünme, seyir direnci, kayıp kuvvet
+
+\item[Çalışma Şekli:] Lokomotif, yolcu vagonu ve yük vagonu için ayrı hesaplar vardır. Bu hesaplar !!!!! kitabından alınmıştır. 
+
+\begin{itemize}
+\item \textbf{Lokomotif Seyir Direnci}
+\begin{equation}
+F_{seyir} = (6.5 \times m_t) + (130 \times n_a) + (0.1 \times m_t \times \dot{x}_{km}) + (0.3 \times \dot{x}^2_{km})
+\end{equation}
+
+\item \textbf{Yük Vagonu Seyir Direnci}
+\begin{equation}
+F_{seyir} = (2 + \dfrac{0.057 \times \dot{x}^2_{km} }{100})\times m_t \times 10
+\end{equation}
+
+\item \textbf{Yolcu Vagonu Seyir Direnci}
+\begin{equation}
+F_{seyir} = (1.986 + 0.00932 \times \dot{x}_km + 0.000161 \dot{x}^2_{km}) \times m_t
+\end{equation}
+\end{itemize}
+
+\item[Ayarlar ve Değişkenler:] Değişkenler aracın modeline göre değişmektedir. Ayarlanması gereken bir değer yoktur.
+\begin{description}
+\item[$n_a$:]araç üzerindeki aks sayısı, teker çifti (birimi yok) [number of axels]
+\item[$m_t$:]aracın kütlesi (ağırlığı????) (birimi????)
+\item[$\dot{x}_k$:] aracın hızı (km/sn)
+\end{description}
+
+\item[Fonksiyon:]!!!!Çağırılan foknsiyonu yaz
+
+\item[Testler:]Değerlerin doğru hesaplandığında dair bir test yapılmıştır.
+
+\item[Kabuller:]Denklemler empirik yöntemlerle bulunmuştur. Kuvvet değerleri ufak olduğundan sistem üzerinde büyük etkileri yoktur. 
+
+\end{description}
+\newpage
+
+\subsection{Kurb Direnci}
+\begin{description}
+\item[Tanım ve Amaç:] Kurb direnci kurblarda tren üzerine etki eden bir kuvvettir. Bu kuvvet kurbun yarıçap uzunluğuna bağlıdır.
+\item[Tagler:]sürtünme, kurb direnci, kayıp kuvvet
+\item[Çalışma Şekli:] Denklem !!!! kitabından alınmıştır.
+
+\begin{equation}
+F_{kurb} = \dfrac{6500}{r_c - 55} \times m_t
+\end{equation}
+
+\item[Testler:] Değerlerin doğru hesaplandığına dair bir test yapılmıştır.
+\item[Kabuller:] Denklemler empirik yöntemlerle bulunmuştur. Kuvvet değerleri ufak olduğu için sistem üzerinde büyük etkileri yoktur.
+\end{description}
+\newpage
+
+\subsection{Rampa Direnci}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
+
+\subsection{Kayma}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
 
 \newpage
+
 \section{Yol}
 
 \subsection{Yol Durumunun Hesaplanması}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
 
 \subsection{Yol Bilgisinin Alınması}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+
 \newpage
 
 \section{Tren Oluşturma}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
 
 \subsection{Lokomotif ve Vagon Ekleme}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
 
 \subsection{Araçları Bağlama}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
 
 \subsection{Akuple}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
 
 \subsection{Ranfor}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
 
 \newpage
+
 \section{Hava Freni}
 
 \subsection{Kontrol Valfı}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
 
 \subsection{Yedek Hava Deposu}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
 
 \subsection{Fren Silindiri}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
 
 \subsection{Fren Kuvveti}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
 
 \subsection{Fren Hataları}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
 
 \subsection{Modrabl}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
 
 \subsection{Purjör}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
 
 \subsection{Makinist Musluğu}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
 
 \subsection{Kondüvit Hattı}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+\newpage
 
 \subsection{Ana Hava Deposu ve Kompresör}
+\begin{description}
+\item[Tanım ve Amaç:] 
+\item[Tagler:]
+\item[Fonksiyon:]
+\item[Testler:]
+\item[Kabuller:]
+\end{description}
+
 \newpage
 
 \end{document}
