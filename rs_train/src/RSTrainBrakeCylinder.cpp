@@ -2,7 +2,7 @@
  * RSTrainBrakeCylinder.cpp
  *
  *  Created on: 18 Haz 2014
- *      Author: Cihan UYANIK
+ *      Author: Cihan Uyanik
  */
 
 #include "RSTrainBrakeCylinder.h"
@@ -11,6 +11,7 @@
 #include "pugixml.hpp"
 #include <math.h>
 #include <iostream>
+
 using namespace std;
 RSTrainBrakeCylinder::RSTrainBrakeCylinder(RSTrainVehicle* parent,
 		RSTrainControlValve* controlValve) {

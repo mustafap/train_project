@@ -243,7 +243,7 @@ void RSTrainSimulator::setThrottlePos(int index, int throttlepos) {
 
 void RSTrainSimulator::setBrakeValvePos(int brakevalvepos) {
 
-	// BÜTÜN LOKOMOTÝFLERE UYGULANACAKMI
+
 	if(mainLocomotive){
 		mainLocomotive->setBrakeValve(brakevalvepos);
 	}
@@ -252,7 +252,7 @@ void RSTrainSimulator::setBrakeValvePos(int brakevalvepos) {
 
 void RSTrainSimulator::setAuxBrakePos(int auxbrakepos) {
 
-	// BÜTÜN LOKOMOTÝFLERE UYGULANACAKMI
+
 	if(mainLocomotive){
 		mainLocomotive->setAuxBrake(auxbrakepos);
 	}
@@ -322,7 +322,7 @@ void RSTrainSimulator::InitRailwayElement(string xmlFileName) {
 	this->railwayelement = parser->spawnFromXML(xmlFileName);
 }
 
-// FRENLERÝN YARATILMASINA DIKKAT ET
+
 
 
 void RSTrainSimulator::removeRunforLocomotive() {
@@ -357,7 +357,7 @@ void RSTrainSimulator::addRunforLocomotive(int locotype) {
 		locomotive_->setRailRoad(this->railwayelement);
 
 		int BCSize = locomotive_->getBrakeCylinderCount();
-		// BÜTÜN LOCOMOTÝFLER ÝÇÝN MODERABLE GEÇERLÝMÝ
+
 		for (int i = 0; i < BCSize; i++) {
 			RSTrainControlValve* CV = new RSTrainLocomotiveControlValve(
 					locomotive);
@@ -397,7 +397,7 @@ void RSTrainSimulator::addLocomotive(int locotype) {
 		locomotive_->setRailRoad(this->railwayelement);
 
 		int BCSize = locomotive_->getBrakeCylinderCount();
-		// BÜTÜN LOCOMOTÝFLER ÝÇÝN MODERABLE GEÇERLÝMÝ
+
 		for (int i = 0; i < BCSize; i++) {
 			RSTrainControlValve* CV = new RSTrainLocomotiveControlValve(locomotive);
 
@@ -424,7 +424,7 @@ void RSTrainSimulator::addLocomotive(int locotype) {
 
 }
 
-// FRENLERÝN YARATILMASINA DIKKAT ET
+
 
 // creation of  vagons
 void RSTrainSimulator::addCar(int carType) {

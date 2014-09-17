@@ -61,17 +61,16 @@ RSTrainCoupling::~RSTrainCoupling() {
 
 void RSTrainCoupling::calcDistance() {
 
-	// coupling e baðlý ön aracýn posvel vectorunu al
+	// get posvel vector of the front vehicle
 	vector<double>& posvelfront = this->frontVehicle->getPosvel();
-
-	// coupling e baðlý arka aracýn posvel vectorunu al
+	
+	// get posvel vector of the front vehicle
 	vector<double>& posvelback = this->backVehicle->getPosvel();
 
-	// önceki mesafeyi tut
+	// record previous distance
 	this->prevDistance = this->distance;
 
-	// coupling üzerindeki deðiþimi hesapla
-	// posvel[0] araçlarýn pozisyon deðiþimlerini verir
+	// calculate the change in distance
 	this->distance = (posvelfront[0] - posvelback[0]) * 1000; // Convert into milimeter
 
 

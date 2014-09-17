@@ -348,7 +348,6 @@ void RSTrainVehicle::calcAlfa() {
 }
 
 void RSTrainVehicle::calcCurveResistance() {
-	// curve (rc ) nin birimine bakýlmasý lazým
 
 	//		  6500
 	//Fcur =-------- * Gl
@@ -374,7 +373,7 @@ void RSTrainVehicle::calcCurveResistance() {
 }
 
 void RSTrainVehicle::calcRampResistance() {
-	// verilen slope deðerine dikkat et
+
 
 	//Framp = mgsin(angle)
 

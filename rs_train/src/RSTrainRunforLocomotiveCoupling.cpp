@@ -1,7 +1,7 @@
 /*
  * RSTrainRunforLocomotiveCoupling.cpp
  *
- *  Created on: 15 Aðu 2014
+ *  Created on: 15 Agu 2014
  *      Author: Cihan UYANIK
  */
 

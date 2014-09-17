@@ -7,3 +7,9 @@ train_project.pro.user
 train_project.pro.user.3.2-pre1
 train_project.pro.user
 *.user
+rs_train/rs_train.pro
+*.pro
+rs_train/rs_train.pro
+*.pro
+*~
+train_project.pro.user

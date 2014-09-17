@@ -38,16 +38,16 @@ void RSTrainCar::calcCarRollingResistence() {
 
 void RSTrainCar::updateVariables(double dt) {
 
-	// pozisyon deðiþimden kaynaklanan yol bilgisinin deðiþmesiyle ilgilenir
+  // updates the road information due to position change
 	this->watcher->update();
 
-	// hýz deðiþimden dolayý aracýn sahip olduðu hýzý deðiþitiri
+	// updates the velocity of the vehicle
 	this->setVelocity(this->posvel[1]);
 
-	// coefficient friction ý hesapla
+	// calculate the coefficient of friction
 	this->calcCoefFriction();
 
-	// adherance coefficient i hesapla
+	// calculate the adherance coefficient value
 	this->calcAhreranceCoef();
 }
 

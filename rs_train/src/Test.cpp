@@ -54,7 +54,7 @@ int main() {
 	simulator.setBrakeValvePos(0);
 	//simulator.doIntegration();
 
-	//simulator nesnesi üzerinden getteri al
+
 	RSTrainGetter* G = simulator.getGetterAndLogger();
 	simulator.Start();
 
@@ -62,8 +62,6 @@ int main() {
 	//int i;
 	while(true)
 	{
-		//getterin getandlog fonksinonunu kullanarak istediðin deðeri çek
-		//fonksiyon parametreleri yeterince acik
 		G->GetAndLog(G->TOTALFORCE, 0, 0,true);
 		G->GetAndLog(G->VELOCITYKPH,0,0,true);
 	}
